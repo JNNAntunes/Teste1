@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <script src="./components/Menu.js" type="text/babel"></script>
+  <title>document</title>
+</head>
+<body>
+    <nav> 
+          <ul>
+          <li> Home </li>
+          <li> Blog </li>
+          <li> Login </li>
+            </ul>
+            </nav>
+
+  <script type="text/babel">
+    const rootElement = document.querySelector("#root");
+    const Title = <h1> Titulo </h1>;
+    
+    react-dom.render(
+      <Menu/>,
+      rootElement
+    )
+    </script>
+    
+   
+    
+  </body>
+  </html>
